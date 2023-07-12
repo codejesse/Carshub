@@ -11,7 +11,7 @@ const Hero = () => {
         <div className="hero">
             <div className='flex-1 pt-36 padding-x'>
                 <h1 className='hero__title'>
-                    Find, book, or rent a supercar — supercars at your fingertips!
+                    Buy, book, or rent a supercar — supercars at your fingertips!
                 </h1>
                 {/* Study the styling and make changes of your own after build */}
                 <p className="hero__subtitle">
@@ -24,6 +24,11 @@ const Hero = () => {
                     containerStyles="bg-primary-blue text-white rounded-full mt-10"
                     handleClick={handleScroll}
                 />
+                <div className="hero__image-container">
+                    <div className="hero__image">
+                        <Image src="/hero.png"  alt='hero' fill className='object-contain'/>
+                    </div>
+                </div>
             </div>
         </div>
     )
