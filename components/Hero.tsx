@@ -17,19 +17,20 @@ const Hero = () => {
                 <p className="hero__subtitle">
                     The Best Way to Experience the Thrill of Speed.
                 </p>
-
-                {/* Study CustomButton component and resueable techniques for components*/}
                 <CustomButton
                     title="Explore Cars"
                     containerStyles="bg-primary-blue text-white rounded-full mt-10"
                     handleClick={handleScroll}
                 />
-                <div className="hero__image-container">
-                    <div className="hero__image">
-                        <Image src="/bugatti.png"  alt='hero' fill className='object-contain'/>
-                        <div className="hero__image-overlay" />
-                    </div>
+            </div>
+
+            {/* Study CustomButton component and resueable techniques for components*/}
+            <div className="hero__image-container">
+                <div className="hero__image">
+                    <Image src="/bugatti.png" alt='hero' fill className='object-contain' />
                 </div>
+
+                <div className="hero__image-overlay" />
             </div>
         </div>
     )
