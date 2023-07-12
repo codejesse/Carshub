@@ -1,17 +1,32 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
+import CustomButton from './CustomButton'
 
 const Hero = () => {
-  return (
-    <div className="hero">
-        <div className='flex-1 pt-36 padding-x'>
-            <h1 className='hero__title'>
-                Find, book, or rent a supercar — Quickly and easily!
-            </h1>
-            {/* Study the styling and make changes of your own after build */}
+    const handleScroll = () => {
+
+    }
+    return (
+        <div className="hero">
+            <div className='flex-1 pt-36 padding-x'>
+                <h1 className='hero__title'>
+                    Find, book, or rent a supercar — supercars at your fingertips!
+                </h1>
+                {/* Study the styling and make changes of your own after build */}
+                <p className="hero__subtitle">
+                    The Best Way to Experience the Thrill of Speed.
+                </p>
+
+                {/* Study CustomButton component and resueable techniques for components*/}
+                <CustomButton
+                    title="Explore Cars"
+                    containerStyles="bg-primary-blue text-white rounded-full mt-10"
+                    handleClick={handleScroll}
+                />
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Hero
