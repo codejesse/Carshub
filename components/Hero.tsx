@@ -11,7 +11,7 @@ const Hero = () => {
         <div className="hero">
             <div className='flex-1 pt-36 padding-x'>
                 <h1 className='hero__title'>
-                    Buy, book, or rent a supercar — supercars at your fingertips!
+                    Buy, book, or rent a supercar — Fast!
                 </h1>
                 {/* Study the styling and make changes of your own after build */}
                 <p className="hero__subtitle">
