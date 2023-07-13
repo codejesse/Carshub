@@ -11,6 +11,7 @@ interface CarCardProps {
 
 const CarCard = ({ car }: CarCardProps) => {
     const { city_mpg, year, make, model, transmission, drive } = car;
+    const [isOpen, setIsOpen] = useState(false)
 
     const carRent = calculateCarRent(city_mpg, year)
 
@@ -32,7 +33,7 @@ const CarCard = ({ car }: CarCardProps) => {
             </p>
 
             <div className='relative w-full h-40 my-3 object-contain'>
-                <Image src="/bugatti.png"  alt='car model' fill priority className='object-contain' />
+                <Image src="/bugatti.png" alt='car model' fill priority className='object-contain' />
             </div>
 
             <div className='relative flex w-full mt-2'>
@@ -56,6 +57,17 @@ const CarCard = ({ car }: CarCardProps) => {
                         </p>
                     </div>
                 </div>
+
+                <div className='car-card__btn-container'>
+                    <CustomButton
+                        title='View more'
+                        containerStyles='w-full py-[16px] rounded-full bg-primary-blue'
+                        textStyles="text-white text-[14px] leading-[17px] font-bold"
+                        rightIcon="/right-arrow.svg"
+                        handleClick={() => setIsOpen(true)}
+                    />
+                </div>
+
             </div>
         </div>
     )
